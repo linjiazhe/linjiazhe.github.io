@@ -1,0 +1,480 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    text-align: left;
+    background-color: #d5bbff;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #787878;
+    transform: translateY(-2px);
+}
+
+.button:active {
+    background-color: #727272;
+    transform: translateY(0);
+}
+  
+  .elementor-title {
+    width: 100%;
+    position: relative;
+    padding: 0px 0px 70px 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .elementor-title .elementor-container {
+    width: 32.274%;
+    text-align: center;
+  }
+  .elementor-title .elementor-container .elementor-heading-title {
+    font-family: Millik-Regular;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 400;
+  }
+  .elementor-title .elementor-container .elementor-widget-container {
+    font-size: 45px;
+  }
+  
+  .elementor-1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../asset/img/show-1.jpg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    position: relative;
+    margin-bottom: 100px;
+  }
+  .elementor-1 .elementor-1-container {
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    transform: translate(-10%, -40%);
+  }
+  .elementor-1 .elementor-1-container .elementor-1-title {
+    font-size: 80px;
+    z-index: 10;
+    width: 70%;
+    font-family: Millik-Bold;
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  .elementor-1 .elementor-1-container .elementor-1-img {
+    position: absolute;
+    right: 20%;
+    top: 5%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+  }
+  .elementor-1 .elementor-1-container .elementor-1-img img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .elementor-3 {
+    width: 100%;
+    position: relative;
+    padding: 0px 0px 230px 100px;
+    box-sizing: border-box;
+  }
+  .elementor-3 .elementor-3-container {
+    width: 100%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+  }
+  .elementor-3 .elementor-3-container .slick-slide img {
+    width: 454px;
+    opacity: 1;
+    transition: opacity 500ms ease 0s;
+  }
+  .elementor-3 .elementor-3-container .slick-right {
+    padding: 0% 15% 0% 5%;
+  }
+  .elementor-3 .elementor-3-container .slick-right .elementor-widget-text {
+    margin-bottom: 3rem;
+    font-family: Millik-Regular;
+    font-size: 15px;
+  }
+  .elementor-3 .elementor-3-container .slick-right .elementor-btn-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .elementor-3 .elementor-3-container .slick-right .elementor-btn-wrap .slick-btn {
+    margin-bottom: 10px;
+    width: 30% !important;
+    height: 50px !important;
+    font-family: Millik-Regular;
+  }
+  
+  .elementor-5 {
+    width: 100%;
+    position: relative;
+    padding: 0px 0px 200px 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+  }
+  .elementor-5 .elementor-5-container {
+    display: flex;
+  }
+  .elementor-5 .elementor-5-container .elementor-card {
+    flex: 1;
+    margin: 40px;
+  }
+  .elementor-5 .elementor-5-container .elementor-card .card-title {
+    text-align: center;
+    padding: 20px 0;
+    transform: translateY(-5px);
+    transition: 0.4s;
+    font-size: 15px;
+    font-family: Millik-Bold;
+  }
+  .elementor-5 .elementor-5-container .elementor-card img {
+    width: 100%;
+    height: auto;
+  }
+  .elementor-5 .elementor-5-container .elementor-card:hover .card-title {
+    background: #f8eb84;
+  }
+  
+  .elementor-6 {
+    width: 100%;
+    position: relative;
+    padding: 0px 0px 800px 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  .elementor-6 .elementor-6-container {
+    width: 32.274%;
+    text-align: center;
+  }
+  .elementor-6 .elementor-6-container .elementor-heading-title {
+    font-family: Playfair Display;
+    font-size: 30px;
+    color: #b4b4b4;
+    font-weight: 400;
+  }
+  .elementor-6 .elementor-6-container .elementor-6-img {
+    position: absolute;
+    opacity: 0;
+  }
+  .elementor-6 .elementor-6-container .img-1 {
+    width: 450px;
+    height: auto;
+    left: 10%;
+  }
+  .elementor-6 .elementor-6-container .img-2 {
+    right: 10%;
+    width: 600px;
+    height: auto;
+  }
+  .elementor-6 .elementor-6-container .img-3 {
+    left: 10%;
+    bottom: -5%;
+    width: 350px;
+    height: auto;
+  }
+  .elementor-6 .elementor-6-container .img-4 {
+    width: 400px;
+    height: auto;
+    right: 10%;
+    bottom: 0%;
+  }
+  
+  .elementor-8 {
+    width: 100%;
+    position: relative;
+    padding: 0px 0px 70px 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .elementor-8 .elementor-8-container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Millik-Regular;
+  }
+  .elementor-8 .elementor-8-container .elementor-list-wrapper {
+    width: 25%;
+    margin: 10px;
+  }
+  .elementor-8 .elementor-8-container .elementor-list-wrapper .list {
+    list-style: none;
+  }
+  .elementor-8 .elementor-8-container .elementor-list-wrapper .list .list-item {
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    display: flex;
+    padding: 20px 0px 25px 0px;
+    justify-content: space-between;
+  }
+  .elementor-8 .elementor-8-container .elementor-list-wrapper .list .list-item h5 {
+    font-family: Millik-Regular;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+  }
+  
+  .elementor-9 {
+    width: 100%;
+    position: relative;
+    padding: 0px 0px 70px 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .elementor-9 .elementor-9-container {
+    width: 32.274%;
+    text-align: center;
+  }
+  .elementor-9 .elementor-9-container .elementor-heading-title {
+    font-family: Millik-Regular;
+    font-size: 30px;
+    color: #b4b4b4;
+    font-weight: 400;
+  }
+  .elementor-9 .elementor-9-container .elementor-widget-container {
+    font-size: 45px;
+  }
+  
+  .elementor-10 {
+    width: 100%;
+    position: relative;
+    padding: 0px 0px 70px 0px;
+    box-sizing: border-box;
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  .elementor-10 .elementor-10-container {
+    text-align: center;
+    display: flex;
+  }
+  .elementor-10 .elementor-10-container .elementor-card {
+    flex: 1;
+    margin: 40px;
+  }
+  .elementor-10 .elementor-10-container .elementor-card img {
+    width: 100%;
+    height: auto;
+  }
+  .elementor-10 .elementor-10-container .elementor-card .card-info {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .elementor-10 .elementor-10-container .elementor-card .card-info .info-name {
+    margin: 10px 0;
+    font-family: Millik-Regular;
+  }
+  .elementor-10 .elementor-10-container .elementor-card .card-info .position {
+    font-family: Moderat-Medium;
+  }
+  
+  .elementor-11 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 200px 0px;
+  }
+  .elementor-11 .elementor-11-container {
+    text-align: center;
+    font-family: Millik;
+    font-size: 30px;
+  }
+  .elementor-11 .elementor-11-container .elementor-heading-title {
+    margin: 20px 0;
+  }
+  
+  @media (max-width: 1200px) {
+    .elementor-title {
+      width: 100%;
+      position: relative;
+      padding: 0px 0px 70px 0px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .elementor-title .elementor-container {
+      width: 100%;
+      text-align: center;
+    }
+    .elementor-title .elementor-container .elementor-heading-title {
+      font-family: Millik-Regular;
+      color: #b4b4b4;
+      font-weight: 400;
+    }
+    .elementor-title .elementor-container .elementor-widget-container {
+      font-size: 45px;
+    }
+    .elementor-1 {
+      height: 80vh;
+      background-position: center right;
+      background-size: 40% auto;
+    }
+    .elementor-1 .elementor-1-container .elementor-1-title {
+      font-size: 3rem;
+      z-index: 10;
+      width: 70%;
+      font-family: Millik-Bold;
+      opacity: 0;
+      transform: translateY(-20%);
+    }
+    .elementor-1 .elementor-1-container .elementor-1-img {
+      position: absolute;
+      right: 0%;
+      top: 5%;
+      width: 50px;
+      height: 50px;
+    }
+    .elementor-1 .elementor-1-container .elementor-1-img img {
+      width: 100%;
+      height: 100%;
+    }
+    .elementor-3 {
+      padding: 0px 20px 230px 20px;
+    }
+    .elementor-3 .elementor-3-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .elementor-3 .elementor-3-container .slick-right {
+      padding: 5% 0 0 0 !important;
+    }
+    .elementor-5 {
+      padding: 0px 0px 50px 0px;
+    }
+    .elementor-6 {
+      padding: 0px 0px 10px 0px;
+    }
+    .elementor-6 .elementor-6-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .elementor-6 .elementor-6-container .elementor-6-img {
+      position: static;
+      opacity: 0;
+      margin: 10px 0;
+    }
+    .elementor-6 .elementor-6-container .img-1 {
+      width: 40%;
+      height: auto;
+    }
+    .elementor-6 .elementor-6-container .img-2 {
+      width: 40%;
+      height: auto;
+    }
+    .elementor-6 .elementor-6-container .img-3 {
+      width: 40;
+      height: auto;
+    }
+    .elementor-6 .elementor-6-container .img-4 {
+      width: 40%;
+      height: auto;
+    }
+  }
+  @media (max-width: 768px) {
+    .nav .nav-left {
+      width: 100%;
+      flex-direction: row;
+      align-content: center;
+      justify-content: space-between;
+    }
+    .nav .nav-left h1 {
+      font-size: 5vw;
+    }
+    .nav .raven-button {
+      display: none;
+    }
+    .elementor-1 {
+      height: 60vh;
+      background-position: center center;
+      background-size: 100% auto;
+      color: #fff;
+      margin-bottom: 40px;
+    }
+    .elementor-1::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+    }
+    .elementor-1 .elementor-1-container {
+      width: 100%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .elementor-1 .elementor-1-container .elementor-1-title {
+      width: 100%;
+      text-align: center;
+    }
+    .elementor-1 .elementor-1-container .elementor-1-img {
+      display: none;
+    }
+    .elementor-3 {
+      padding: 0px 20px 230px 20px;
+    }
+    .elementor-3 .elementor-3-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .elementor-3 .elementor-3-container .slick-right {
+      padding: 5% 0 0 0 !important;
+    }
+    .elementor-5 {
+      padding: 0px 0px 50px 0px;
+    }
+    .elementor-5 .elementor-5-container {
+      flex-direction: column;
+    }
+    .elementor-10 .elementor-10-container {
+      flex-direction: column;
+    }
+  }

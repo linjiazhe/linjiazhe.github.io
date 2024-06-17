@@ -1,0 +1,263 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
+    /* 使用Arial字體，如果無法顯示則使用系統默認的sans-serif字體 */
+}
+
+.cover-image {
+    width: 100%;
+    height: auto;
+}
+
+.center {
+    text-align: center;
+    padding: 90px 90px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.text-container {
+    text-align: left;
+    margin-top: 200px;
+}
+
+.fou-image {
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    left: 0%;
+    animation: float 5s ease infinite;
+    /* 浮動動畫，5秒一次，無限循環 */
+
+}
+
+.sec-image {
+    width: 30%;
+    height: auto;
+    padding: 40px 20px;
+    border-radius: 80px;
+    margin-top: -110px;
+    
+}
+
+.thr-image {
+    width: 30%;
+    height: auto;
+    padding: 40px 20px;
+    border-radius: 80px;
+    margin-top: -110px;
+}
+
+.six-image {
+    width: 30%;
+    height: auto;
+    padding: 40px 20px;
+    border-radius: 80px;
+    margin-top: -110px;
+}
+
+.fif-image {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: -1100px;
+    position: absolute;
+    animation: moveDust 25s linear infinite;
+}
+
+.seven-image {
+    width: 50%;
+    position: absolute;
+    top: 170%;
+    left: 60%;
+    transform: rotate(25deg);
+}
+.eig-image{
+    width: 50%;
+    position: absolute;
+    top: 355%;
+    left: 25%;
+    overflow: hidden; /* 隐藏超出容器的部分 */
+    transition: transform 0.5s ease-in-out; /* 添加过渡效果 */
+}
+.eig-image:hover {
+    transform: scale(1.1); /* 设置缩放比例，例如 1.5 表示放大 1.5 倍 */
+  }
+
+
+.nin-image{
+    width: 40%;
+    position: absolute;
+    top: 355%;
+    left: 30%;
+    transition: transform 0.5s ease-in-out;
+}
+.nin-image:hover{
+    transform: scale(1.4);
+}
+.ten-image{
+    width: 60%;
+    position: absolute;
+    top: 355%;
+    left: 22%;
+}
+.navbar {
+    background-color: #d5bbff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    /* 設置導航欄內邊距 */
+    z-index: 1000;
+    /* 確保導航欄處於最上層 */
+}
+
+.image-container {
+    display: flex;
+}
+
+.image-container img {
+    flex: 1;
+    /* 图片平均分配空间 */
+    max-width: 100%;
+    /* 图片不超出容器 */
+    height: auto;
+    /* 图片高度自适应 */
+    
+}
+
+
+
+.footer {
+    background-color: #d5bbff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    min-height: 10vh;
+    display: block;
+    font-size: small;
+    font-family: sans-serif Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.footer-content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.element {
+    transition: background-color 0.3s ease-in-out;
+    width: 100%;
+    height: auto;
+    
+}
+
+.element:hover {
+    background-color: #d5bbff;
+}
+
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+        /* 向上浮動 10px */
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveDust {
+    0% {
+        transform: translate(0, 0);
+        /* 初始位置 */
+    }
+
+    25% {
+        transform: translate(25vw, 50vh);
+        /* 向右下方移动 */
+    }
+
+    50% {
+        transform: translate(-25vw, -50vh);
+        /* 向左上方移动 */
+    }
+
+    75% {
+        transform: translate(50vw, -25vh);
+        /* 向右上方移动 */
+    }
+
+    100% {
+        transform: translate(-50vw, 25vh);
+        /* 向左下方移动 */
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.element {
+    animation: slide-in 1s ease-in-out;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* 小於等於 768px 寬度的裝置（如手機） */
+@media screen and(max-width: 768px) {
+    body {
+        font-size: 14px;
+        /* 修改文字大小 */
+    }
+
+    .navbar {
+        padding: 5px 0;
+        /* 修改導航欄內邊距 */
+    }
+}
+
+/* 大於 768px 且小於等於 1024px 寬度的裝置（如平板電腦） */
+@media screen and(min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+        /* 修改文字大小 */
+    }
+
+    .navbar {
+        padding: 10px 0;
+        /* 修改導航欄內邊距 */
+    }
+}
+
+/* 大於 1024px 寬度的裝置（如桌面電腦） */
+@media screen and(min-width: 1025px) {
+    body {
+        font-size: 18px;
+        /* 修改文字大小 */
+    }
+
+    .navbar {
+        padding: 20px 0;
+        /* 修改導航欄內邊距 */
+    }
+}
